@@ -1,0 +1,66 @@
+
+% Habilita a língua portuguesa
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+
+
+\newcommand{\sen}{\mathrm{sen \, }}
+\newcommand{\senh}{\mathrm{senh \, }}
+\newcommand{\tg}{\mathrm{tg\, }}
+\newcommand{\cotg}{\mathrm{cotg\, }}
+\newcommand{\arctg}{\mathrm{arctg \, }}
+\newcommand{\arcsen}{\mathrm{arcsen \, }}
+\newcommand{\Arg}{\mathrm{Arg \, }}
+\newcommand{\cossec}{\mathrm{cossec\, }}
+\newcommand{\cqd}{\hfill\square}
+\newcommand{\dom}{\operatorname{Dom}}
+\newcommand{\supt}{\operatorname{supt}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{plain}
+\newtheorem{teorema}{\blue{ Teorema\inserttheoremnumber}}
+\newtheorem{corolario}{Corolário\inserttheoremnumber}
+\newtheorem{lema}{Lema\inserttheoremnumber}
+\newtheorem{axioma}{Axioma\inserttheoremnumber}
+\newtheorem{propriedade}{Propriedade}
+\newtheorem{proposicao}{Proposição\inserttheoremnumber}
+\newtheorem{observacao}{Observação\inserttheoremnumber}
+
+\newtheorem{question}{{\color{UFGblue}\rule{1cm}{2pt}}\ Questão}
+
+%\newtheorem{question}{Questão}
+\newtheorem{problema}{Problema\inserttheoremnumber}
+\theoremstyle{definition} 
+\newtheorem{definicao}{\blue{ Definição\inserttheoremnumber}}
+\newtheorem{obs}{\red{ Observação\inserttheoremnumber}} 
+\newtheorem{exemplo}{\green{ Exemplo\inserttheoremnumber}}
+\newtheorem{exercicio}{\red{ Exercício\inserttheoremnumber}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{prova}{\vspace{.1cm}\noindent {\red{\bf Prova.}}}{
+$\cqd$\vspace{2mm}}
+
+\newenvironment{solucao}{\vspace{.1cm}\noindent {\green{\bf Solução.}}\footnotesize}{
+$\cqd$\vspace{2mm}}
+
+\columnsep=10pt % This is the amount of white space between the columns in the poster
+\columnseprule=1pt % This is the thickness of the black line between the columns in the poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{siunitx}
+
+\sisetup{
+  group-four-digits = true,
+  group-separator = {.}
+}
+
+%transforma o simbolo decimal . em , no modo matemático.
+% \DeclareMathSymbol{.}{\mathord}{letters}{"3B}

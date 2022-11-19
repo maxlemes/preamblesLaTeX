@@ -1,0 +1,92 @@
+%\usepackage[default]{comfortaa}
+\usepackage{tcolorbox}
+\usepackage{svg} 
+\usepackage{cancel}
+\usepackage{animate}
+%\usepackage{pdfpages}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{plain}
+\newtheorem{teorema}{\blue{ Teorema\inserttheoremnumber}}
+\newtheorem{corolario}{Corolário\inserttheoremnumber}
+\newtheorem{lema}{Lema\inserttheoremnumber}
+\newtheorem{propriedade}{Propriedade}
+\newtheorem{proposicao}{Proposição\inserttheoremnumber}
+%\newtheorem{question}{Questão}
+\newtheorem{problema}{Problema\inserttheoremnumber}
+\theoremstyle{definition} 
+\newtheorem{definicao}{\blue{ Definição\inserttheoremnumber}}
+\newtheorem{obs}{\red{ Observação\inserttheoremnumber}} 
+\newtheorem{exemplo}{\green{ Exemplo\inserttheoremnumber}}
+
+\newtheorem{exercicio}{\red{ Exercício\inserttheoremnumber}}
+
+
+\newenvironment{prova}{\vspace{.1cm}\noindent {\red{\bf Prova.}}}{
+$\cqd$\vspace{2mm}}
+
+\newenvironment{solucao}{\vspace{.1cm}\noindent {\green{\bf Solução.}}\footnotesize}{
+$\cqd$\vspace{2mm}}
+
+\newcommand{\cqd}{\hfill\square}
+
+\columnsep=10pt % This is the amount of white space between the columns in the poster
+\columnseprule=1pt % This is the thickness of the black line between the columns in the poster
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Definições das minhas cores %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{mybcolor}{rgb}{0.122, 0.435, 0.698}
+\definecolor{mygcolor}{rgb}{0.0, 0.7, 0.2}
+\definecolor{myrcolor}{rgb}{0.8, 0.0, 0.2}
+
+\definecolor{darkgreen}{rgb}{0.0509, 0.4509, 0.1568}
+\definecolor{orangeb}{rgb}{0.9216, 0.4863, 0.0784}%{HTML}{EB811B}
+\definecolor{blued}{rgb}{0.0039, 0.3529, 0.6431} 
+
+
+
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+\newcommand*{\bord}{\multicolumn{1}{c|}{}}
+\newcommand*{\bordd}{\multicolumn{1}{|c}{}}
+
+
+\newcommand{\sen}{\mathrm{sen \!\, }}
+\newcommand{\senh}{\mathrm{senh \, }}
+\newcommand{\tg}{\mathrm{tg\, }}
+\newcommand{\cotg}{\mathrm{cotg\, }}
+\newcommand{\arctg}{\mathrm{arctg \, }}
+\newcommand{\arcsen}{\mathrm{arcsen \, }}
+\newcommand{\Arg}{\mathrm{Arg \, }}
+\newcommand{\cossec}{\mathrm{cossec\, }}
+
+\usepackage{pgf,tikz,pgfplots}
+\usepackage{nicematrix}
+\usetikzlibrary{matrix,arrows, decorations.pathreplacing, calc, positioning,fit,math}
+%\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+%\pagestyle{empty}
+%\usetikzlibrary{positioning}
+
+
+% \newcommand*{\mybbox}{\box}
+% \newcommand*{\mygbox}{\box}
+% \newcommand*{\myrbox}{\box}
+
+
+%%%%%%%%%%%%%%%%%%%%%%% Definições dos box %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtcbox{\mybbox}{nobeforeafter,colframe=mybcolor,colback=mybcolor!20!white,boxrule=1pt,arc=4pt,boxsep=0pt,left=0pt,right=4pt,top=0pt,bottom=16pt,tcbox raise base}
+\usepackage[symbols,nogroupskip,nonumberlist]{glossaries-extra}
+
+\newtcbox{\mmybbox}{nobeforeafter,colframe=mybcolor,colback=mybcolor!10!white,boxrule=0.5pt,arc=4pt,boxsep=0pt,left=6pt,right=6pt,top=1pt,bottom=1pt,tcbox raise base}
+\usepackage[symbols,nogroupskip,nonumberlist]{glossaries-extra}
+
+
+\newtcbox{\mygbox}{nobeforeafter,colframe=mybcolor,colback=orange!10!white,boxrule=1.0pt,arc=4pt,boxsep=0pt,left=6pt,right=6pt,top=4pt,bottom=4pt,tcbox raise base}
+\usepackage[symbols,nogroupskip,nonumberlist]{glossaries-extra}
+
+
+\newtcbox{\myrbox}{nobeforeafter,colframe=myrcolor,colback=myrcolor!10!white,boxrule=0.5pt,arc=4pt,boxsep=0pt,left=6pt,right=6pt,top=1pt,bottom=1pt,tcbox raise base}
+\usepackage[symbols,nogroupskip,nonumberlist]{glossaries-extra}

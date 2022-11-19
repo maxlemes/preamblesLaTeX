@@ -1,0 +1,37 @@
+%\newtheorem{algorithm}{Algorithm}
+\newtheorem{exemplo}{Exemplo}
+
+
+\newcommand{\brl}{\mathrm{R}\$}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\sen}{\hspace{2pt}\textrm{sen \!}}
+\newcommand{\senh}{\hspace{2pt}\textrm{senh \!}}
+
+
+\DeclareMathOperator{\tr}{tr} % define o traço de uma matriz
+\DeclareMathOperator*{\minimize}{Minimize}
+
+
+% \newlist{parts}{enumerate}{3}
+% \setlist[parts]{label=\arabic*.}
+% \renewcommand{\part}{\item}
+
+\renewenvironment{solution}{ {\bfseries Solução}:}{}
+
+\newif\ifhidesolutions
+\hidesolutionstrue %uncomment to hide solutions
+
+\ifhidesolutions
+\usepackage{environ}
+\NewEnviron{hide}{}
+\let\solution\hide
+\let\endsolution\endhide
+\fi
+
+
+
+\newcommand{\red}[1]{\textcolor{UFGred}{#1}}
+\newcommand{\blue}[1]{\textcolor{UFGblue}{#1}}
+\newcommand{\green}[1]{\textcolor{UFGgreen}{#1}}
+\newcommand{\gray}[1]{\textcolor{UFGgray}{#1}}
