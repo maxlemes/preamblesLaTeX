@@ -25,10 +25,12 @@
 \usepackage[scale=2]{ccicons}
 %\usepackage{enumitem}
 \usepackage{enumerate}
-% \usepackage{subfigure}
+\usepackage{subfigure}
 % \usepackage{subfigmat}
-\usepackage[T1]{fontenc} 
-\usepackage{subfig}
+\usepackage[T1]{fontenc}
+% \usepackage{subfig}
+\usepackage{cancel}
+
 % \usepackage{arev}
 
 
@@ -49,14 +51,22 @@
 %\usepackage{kpfonts}
 
 %  Define as cores a serem usadas
-\definecolor{UFGblue}{rgb}{0.0039, 0.3529, 0.6431} 
+\definecolor{UFGblue}{rgb}{0.0039, 0.3529, 0.6431}
 \definecolor{UFGred}{HTML}{990000}
 \definecolor{UFGorange}{rgb}{0.9216, 0.4863, 0.0784}
 \definecolor{UFGgreen}{rgb}{0.0509, 0.4509, 0.1568}
 \definecolor{UFGgray}{rgb}{0.3686, 0.5255, 0.6235} % UBC Gray (secondary)
-\definecolor{ultramarine}{rgb}{0, 0.125, 0.376} 
+\definecolor{ultramarine}{rgb}{0, 0.125, 0.376}
 \definecolor{UFGorange}{rgb}{0.9216, 0.4863, 0.0784}%{HTML}{EB811B}
 \definecolor{UFGred}{HTML}{990000}
+
+\definecolor{mybcolor}{rgb}{0.122, 0.435, 0.698}
+\definecolor{mygcolor}{rgb}{0.0, 0.7, 0.2}
+\definecolor{myrcolor}{rgb}{0.8, 0.0, 0.2}
+
+\definecolor{darkgreen}{rgb}{0.0509, 0.4509, 0.1568}
+\definecolor{orangeb}{rgb}{0.9216, 0.4863, 0.0784}%{HTML}{EB811B}
+\definecolor{blued}{rgb}{0.0039, 0.3529, 0.6431}
 
 \newcommand{\red}[1]{\textcolor{UFGred}{#1}}
 \newcommand{\blue}[1]{\textcolor{UFGblue}{#1}}
@@ -64,7 +74,6 @@
 \newcommand{\gray}[1]{\textcolor{UFGgray}{#1}}
 \renewcommand{\leq}{\leqslant}
 \renewcommand{\geq}{\geqslant}
-
 
 \DeclareMathOperator{\corr}{Corr}
 \DeclareMathOperator{\cov}{Cov}
