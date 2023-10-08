@@ -15,14 +15,14 @@
 
 
 % logo of my university
-\titlegraphic{\vspace{3.5cm}\hfill\includegraphics[height=2.3cm]{\string~/Projetos/ufg/figures/ufglogo.png}} 
+\titlegraphic{\vspace{3.5cm}\hfill\includegraphics[height=2.3cm]{figuras/ufglogo.png}}
 
 
 %Colocando um marca dagua
 \setbeamertemplate{background}{
-  \tikz[overlay,remember picture] 
-    \node[opacity=.05] at (11,-5.5) {\includegraphics[width=10cm]{\string~/Projetos/ufg/figures/marcadagua.png}};
-    }
+  \tikz[overlay,remember picture]
+  \node[opacity=.05] at (11,-5.5) {\includegraphics[width=10cm]{\string~/Projetos/ufg/figures/marcadagua.png}};
+}
 
 
 % - Define a cor da página
@@ -45,9 +45,9 @@
 
 
 % tirando a cor dos cabeçalhos dos blocks
- \setbeamercolor{block title}{bg= ,fg=UFGblue!90!black}
- \setbeamercolor{block title example}{bg=}
- \setbeamercolor{block title alerted}{bg=}
+\setbeamercolor{block title}{bg= ,fg=UFGblue!90!black}
+\setbeamercolor{block title example}{bg=}
+\setbeamercolor{block title alerted}{bg=}
 
 
 % Outras cores
@@ -58,7 +58,7 @@
 % \setbeamercolor{block body alerted}{bg=alerted text.fg!10}
 % \setbeamercolor{block body}{bg=UFGblue!20}
 % \setbeamercolor{block body example}{bg=UFGgreen!20}
- %\setbeamercolor{block body alerted}{bg=UFGblue!10}
+%\setbeamercolor{block body alerted}{bg=UFGblue!10}
 % \setbeamercolor{block title alerted}{bg=UFGred, fg=white}
 
 
@@ -96,18 +96,18 @@
 \makeatletter
 \setlength{\metropolis@frametitle@padding}{1.3ex}%  <- largura da faixa
 \setbeamertemplate{frametitle}{%
-    \nointerlineskip%
-    \begin{beamercolorbox}[%
-            wd=\paperwidth,%
-            sep=3pt,% 
-            leftskip=\metropolis@frametitle@padding,%
-            rightskip=\metropolis@frametitle@padding,%
-            ]{frametitle}%
-            \metropolis@frametitlestrut@start%
-            \insertframetitle%
-            \nolinebreak%
-            \metropolis@frametitlestrut@end%
-    \end{beamercolorbox}
+  \nointerlineskip%
+  \begin{beamercolorbox}[%
+      wd=\paperwidth,%
+      sep=3pt,% 
+      leftskip=\metropolis@frametitle@padding,%
+      rightskip=\metropolis@frametitle@padding,%
+    ]{frametitle}%
+    \metropolis@frametitlestrut@start%
+    \insertframetitle%
+    \nolinebreak%
+    \metropolis@frametitlestrut@end%
+  \end{beamercolorbox}
 }
 \makeatother
 
@@ -126,16 +126,16 @@
 % }
 
 \makeatletter
-\setlength\beamer@paperwidth{16.00cm} 
-\setlength\beamer@paperheight{10.00cm} 
+\setlength\beamer@paperwidth{16.00cm}
+\setlength\beamer@paperheight{10.00cm}
 \geometry{%
-  papersize={\beamer@paperwidth,\beamer@paperheight}, 
+  papersize={\beamer@paperwidth,\beamer@paperheight},
   hmargin=1cm,% 
   vmargin=0cm,%
   head=0.5cm,% might be changed later 
   headsep=0pt,%
   foot=1.5cm% might be changed later 
-} 
+}
 \makeatother
 
 \counterwithout{figure}{section}

@@ -24,26 +24,24 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \theoremstyle{plain}
+\newtheorem{teorema}{\blue{ Teorema\inserttheoremnumber}}
+\newtheorem{corolario}{Corolário\inserttheoremnumber}
+\newtheorem{lema}{Lema\inserttheoremnumber}
+\newtheorem{axioma}{Axioma\inserttheoremnumber}
+\newtheorem{propriedade}{Propriedade}
+\newtheorem{proposicao}{Proposição\inserttheoremnumber}
+\newtheorem{observacao}{Observação\inserttheoremnumber}
 
-\newtheorem{teorema}{Teorema}[chapter]
-\newtheorem{axioma}[teorema]{Axioma}
-\newtheorem{definicao}[teorema]{Definição}
-\newtheorem{proposicao}[teorema]{Proposição}
-\newtheorem{lema}[teorema]{Lema}
-\newtheorem{corolario}[teorema]{Corolário}
-\newtheorem{observacao}[teorema]{Observação}
-\newtheorem{notacao}[teorema]{Notação}
-\newtheorem{observacoes}[teorema]{Observações}
-\newtheorem{exemplo}[teorema]{Exemplo}
-\newtheorem{exercicio}[teorema]{Exerc\'{\i}cio}
-%\newtheorem*{proof}{Demonstra\c c\~ao}
-%%
-%%  Seqüência de comandos definidos pelo usuário.
-%%  É util aprender definir comandos!
-%%
+\newtheorem{question}{{\color{UFGblue}\rule{1cm}{2pt}}\ Questão}
 
+%\newtheorem{question}{Questão}
+\newtheorem{problema}{Problema\inserttheoremnumber}
+\theoremstyle{definition}
+\newtheorem{definicao}{\blue{ Definição\inserttheoremnumber}}
+\newtheorem{obs}{\red{ Observação\inserttheoremnumber}}
+\newtheorem{exemplo}{\green{ Exemplo\inserttheoremnumber}}
+\newtheorem{exercicio}{\red{ Exercício\inserttheoremnumber}}
 
-\newtheorem{question}{Questão}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newenvironment{prova}{\vspace{.1cm}\noindent {\red{\bf Prova.}}}{
   $\cqd$\vspace{2mm}}
